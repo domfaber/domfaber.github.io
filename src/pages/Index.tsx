@@ -35,7 +35,7 @@ const Index = () => {
   ];
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-indigo-900">
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-slate-900 via-orange-900 to-amber-900">
       {/* Noise texture overlay */}
       <div 
         className="absolute inset-0 opacity-20"
@@ -46,7 +46,7 @@ const Index = () => {
       
       {/* Gradient overlays for depth */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 via-transparent to-purple-500/10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 via-transparent to-amber-500/10" />
       
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen p-6">
         {/* Profile Photo */}
