@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probability Machines Need Probability Managers - Dominik Faber</title>
+    <meta name="description" content="Why the future of AI isn't full autonomy—it's carefully-assisted agents that keep humans in the loop at just the right moments.">
+    <meta name="author" content="Dominik Faber">
+    <meta property="og:title" content="Probability Machines Need Probability Managers">
+    <meta property="og:description" content="Why the future of AI isn't full autonomy—it's carefully-assisted agents that keep humans in the loop at just the right moments.">
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="Dominik Faber">
+    <meta property="article:published_time" content="2025-06-01">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .article-container {
+            max-width: 42rem;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #4b5563;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #1e293b;
+        }
+        
+        .article-header {
+            margin-bottom: 3rem;
+        }
+        
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .article-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(to right, #1e293b, #374151, #4b5563);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .article-title {
+                font-size: 3rem;
+            }
+        }
+        
+        .article-excerpt {
+            font-size: 1.25rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+        
+        .article-content {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 1rem;
+            padding: 2rem;
+            line-height: 1.7;
+            color: #374151;
+        }
+        
+        .article-content h2 {
+            color: #1e293b;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+        }
+        
+        .article-content h3 {
+            color: #1e293b;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-content strong {
+            color: #1e293b;
+            font-weight: 600;
+        }
+        
+        .article-content em {
+            font-style: italic;
+        }
+        
+        .article-content blockquote {
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #4b5563;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <!-- Back button -->
+        <a href="../articles.html" class="back-link">
+            ← Back to Articles
+        </a>
+
+        <!-- Article header -->
+        <header class="article-header">
+            <div class="article-meta">
+                <div class="article-meta-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>June 2025</span>
+                </div>
+                <div class="article-meta-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                    <span>4 min read</span>
+                </div>
+            </div>
+            
+            <h1 class="article-title">Probability Machines Need Probability Managers</h1>
+            
+            <p class="article-excerpt">
+                Why the future of AI isn't full autonomy—it's carefully-assisted agents that keep humans in the loop at just the right moments.
+            </p>
+        </header>
+
+        <!-- Article content -->
+        <article class="article-content">
+            <p>
+                We're building probability machines and calling them AI. These systems don't know—they predict. They don't understand—they pattern match. And that's exactly why they need human managers who understand probability.
+            </p>
+
+            <h2>The Certainty Trap</h2>
+
+            <p>
+                The biggest mistake in AI deployment isn't technical—it's treating probabilistic outputs as deterministic truths. When an AI system says something with 85% confidence, we often hear "yes" instead of "probably."
+            </p>
+
+            <p>
+                This gap between probabilistic reality and deterministic expectations is where most AI failures happen. Not because the technology is broken, but because we're managing it wrong.
+            </p>
+
+            <h2>What Probability Managers Do</h2>
+
+            <p>
+                A probability manager isn't a new job title—it's a new mindset. These are people who understand that AI systems are tools for augmenting human judgment, not replacing it.
+            </p>
+
+            <p>
+                They know when to trust the 95% confidence score and when to question the 60% one. More importantly, they understand the cost of being wrong in each scenario.
+            </p>
+
+            <blockquote>
+                "The goal isn't to eliminate human judgment—it's to make it more informed and efficient."
+            </blockquote>
+
+            <h2>The Human-AI Collaboration Sweet Spot</h2>
+
+            <p>
+                The most successful AI implementations I've seen don't aim for full automation. Instead, they create intelligent checkpoints where humans and AI systems collaborate:
+            </p>
+
+            <ul>
+                <li><strong>AI suggests, humans decide</strong> - For high-stakes decisions</li>
+                <li><strong>AI acts, humans review</strong> - For routine tasks with clear rollback options</li>
+                <li><strong>AI monitors, humans intervene</strong> - For continuous processes</li>
+                <li><strong>Humans teach, AI learns</strong> - For edge cases and exceptions</li>
+            </ul>
+
+            <h2>Building Probability-Aware Systems</h2>
+
+            <p>
+                The best AI products don't hide their uncertainty—they expose it in useful ways. They show confidence intervals, highlight edge cases, and make it easy for humans to step in when needed.
+            </p>
+
+            <p>
+                This means designing interfaces that communicate probability, not just outcomes. A medical AI that says "likely pneumonia" with contextual information is more useful than one that just says "pneumonia."
+            </p>
+
+            <h2>The Economics of Uncertainty</h2>
+
+            <p>
+                Here's what's interesting: probability-aware AI systems often perform better economically than their "fully autonomous" counterparts. Why? Because they fail more gracefully and maintain user trust.
+            </p>
+
+            <p>
+                When users understand the system's limitations, they use it more effectively. When they trust the system's uncertainty estimates, they make better decisions.
+            </p>
+
+            <h2>Training Probability Managers</h2>
+
+            <p>
+                Organizations need to train people to work with probability machines. This isn't just about understanding AI—it's about developing intuition for when to trust, when to verify, and when to override.
+            </p>
+
+            <p>
+                The best probability managers I know have three key skills:
+            </p>
+
+            <ol>
+                <li><strong>Statistical intuition</strong> - Understanding what confidence scores really mean</li>
+                <li><strong>Domain expertise</strong> - Knowing when AI outputs don't make sense</li>
+                <li><strong>Risk assessment</strong> - Weighing the cost of different types of errors</li>
+            </ol>
+
+            <h2>The Future is Collaborative</h2>
+
+            <p>
+                The future of AI isn't about replacing human judgment—it's about augmenting it with probabilistic reasoning. The companies that understand this will build more robust, trustworthy, and ultimately more successful AI systems.
+            </p>
+
+            <p>
+                Probability machines need probability managers. Not because the technology isn't good enough, but because the combination of human judgment and machine prediction is better than either alone.
+            </p>
+        </article>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made by Dom</p>
+        </footer>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - Dominik Faber</title>
+    <meta name="description" content="Articles by Dominik Faber on product, AI, and building things.">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .articles-container {
+            max-width: 64rem;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #4b5563;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #1e293b;
+        }
+        
+        .articles-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .articles-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(to right, #1e293b, #374151, #4b5563);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .articles-title {
+                font-size: 3rem;
+            }
+        }
+        
+        .articles-subtitle {
+            font-size: 1.25rem;
+            color: #374151;
+        }
+        
+        .articles-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .article-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 1rem;
+            padding: 2rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .article-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            border-radius: 1rem;
+            filter: blur(8px);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+        
+        .article-card:hover::before {
+            opacity: 0.2;
+        }
+        
+        .article-card:hover {
+            background: rgba(255, 255, 255, 0.8);
+            border-color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+        
+        .article-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .article-card-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .article-excerpt {
+            color: #374151;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2563eb;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .article-card:hover .read-more {
+            color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+    <div class="articles-container">
+        <!-- Back button -->
+        <a href="index.html" class="back-link">
+            ← Back to Home
+        </a>
+
+        <!-- Page header -->
+        <div class="articles-header">
+            <h1 class="articles-title">Articles</h1>
+            <p class="articles-subtitle">Thoughts on product, AI, and building things</p>
+        </div>
+
+        <!-- Articles list -->
+        <div class="articles-list">
+            <a href="articles/one-founder-one-product-80m-exit.html" class="article-card">
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        <span>June 2025</span>
+                    </div>
+                    <div class="article-meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                        <span>3 min read</span>
+                    </div>
+                </div>
+                
+                <h2 class="article-card-title">One Founder, One Product, $80M Exit</h2>
+                
+                <p class="article-excerpt">
+                    Some thoughts on Base44 and this current wave of AI tools. What happens when speed and clarity meet the right moment.
+                </p>
+                
+                <div class="read-more">
+                    Read Article →
+                </div>
+            </a>
+
+            <a href="articles/probability-machines-need-probability-managers.html" class="article-card">
+                <div class="article-meta">
+                    <div class="article-meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                        </svg>
+                        <span>June 2025</span>
+                    </div>
+                    <div class="article-meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                        <span>4 min read</span>
+                    </div>
+                </div>
+                
+                <h2 class="article-card-title">Probability Machines Need Probability Managers</h2>
+                
+                <p class="article-excerpt">
+                    Why the future of AI isn't full autonomy—it's carefully-assisted agents that keep humans in the loop at just the right moments.
+                </p>
+                
+                <div class="read-more">
+                    Read Article →
+                </div>
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made by Dom</p>
+        </footer>
+    </div>
+</body>
+</html> 
