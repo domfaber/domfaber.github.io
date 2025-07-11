@@ -1,22 +1,16 @@
-# Use an official Node.js runtime as a parent image
-FROM node:18-slim
+# Use nginx to serve static files
+FROM nginx:alpine
 
-# Set the working directory in the container
-WORKDIR /app
+# Copy HTML, CSS, and static assets to nginx web directory
+COPY index.html /usr/share/nginx/html/
+COPY articles.html /usr/share/nginx/html/
+COPY articles/ /usr/share/nginx/html/articles/
+COPY styles.css /usr/share/nginx/html/
+COPY noise.svg /usr/share/nginx/html/
+COPY public/ /usr/share/nginx/html/public/
 
-# Copy package.json and package-lock.json (or bun.lockb)
-COPY package*.json ./
-COPY bun.lockb ./
+# Expose port 80
+EXPOSE 80
 
-# Install dependencies
-# Using npm as it's more common in Docker contexts
-RUN npm install
-
-# Copy the rest of the application's code
-COPY . .
-
-# Expose the port the app runs on
-EXPOSE 8080
-
-# Define the command to run the app
-CMD ["npm", "run", "dev"] 
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"] 
