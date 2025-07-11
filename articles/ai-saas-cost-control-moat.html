@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Real Moat in AI SaaS: Cost Control and Smart Context - Dominik Faber</title>
+    <meta name="description" content="Been thinking more about what makes an AI product actually defensible. Not in theory, but in the day-to-day reality of running something at scale.">
+    <meta name="author" content="Dominik Faber">
+    <meta property="og:title" content="The Real Moat in AI SaaS: Cost Control and Smart Context">
+    <meta property="og:description" content="Been thinking more about what makes an AI product actually defensible. Not in theory, but in the day-to-day reality of running something at scale.">
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="Dominik Faber">
+    <meta property="article:published_time" content="2025-07-11">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .article-container {
+            max-width: 42rem;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #4b5563;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #1e293b;
+        }
+        
+        .article-header {
+            margin-bottom: 3rem;
+        }
+        
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+        
+        .article-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(to right, #1e293b, #374151, #4b5563);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+        
+        @media (min-width: 768px) {
+            .article-title {
+                font-size: 3rem;
+            }
+        }
+        
+        .article-excerpt {
+            font-size: 1.25rem;
+            color: #374151;
+            line-height: 1.6;
+        }
+        
+        .article-content {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.7);
+            border-radius: 1rem;
+            padding: 2rem;
+            line-height: 1.7;
+            color: #374151;
+        }
+        
+        .article-content h2 {
+            color: #1e293b;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem 0;
+        }
+        
+        .article-content h3 {
+            color: #1e293b;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem 0;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+        
+        .article-content strong {
+            color: #1e293b;
+            font-weight: 600;
+        }
+        
+        .article-content em {
+            font-style: italic;
+        }
+        
+        .article-content blockquote {
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+            margin: 1.5rem 0;
+            font-style: italic;
+            color: #4b5563;
+        }
+        
+        .article-content ul, .article-content ol {
+            margin: 1.5rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="article-container">
+        <!-- Back button -->
+        <a href="../articles.html" class="back-link">
+            ← Back to Articles
+        </a>
+
+        <!-- Article header -->
+        <header class="article-header">
+            <div class="article-meta">
+                <div class="article-meta-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                        <line x1="16" y1="2" x2="16" y2="6"/>
+                        <line x1="8" y1="2" x2="8" y2="6"/>
+                        <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                    <span>July 2025</span>
+                </div>
+                <div class="article-meta-item">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <polyline points="12,6 12,12 16,14"/>
+                    </svg>
+                    <span>4 min read</span>
+                </div>
+            </div>
+            
+            <h1 class="article-title">The Real Moat in AI SaaS: Cost Control and Smart Context</h1>
+            
+            <p class="article-excerpt">
+                Been thinking more about what makes an AI product actually defensible. Not in theory, but in the day-to-day reality of running something at scale.
+            </p>
+        </header>
+
+        <!-- Article content -->
+        <article class="article-content">
+            <p>
+                With intelligent SaaS—anything using large language models or agents—the biggest moat isn't the model or the interface. It's cost efficiency. Every API call costs money. And the more your users rely on the product, the more those costs pile up.
+            </p>
+
+            <p>
+                At small scale, it's easy to ignore. But when usage grows, it becomes a real problem. Some companies end up spending half their revenue on inference. Others try to raise prices, which rarely works.
+            </p>
+
+            <p>
+                A lot of the work goes into the usual things: caching, prompt trimming, routing simple tasks to cheaper models, or switching to smaller local models when possible. That helps. But it's only part of it.
+            </p>
+
+            <p>
+                What matters just as much is how the prompt gets built—how the context is prepared before the model sees anything. If the input is wrong, the output is useless. Shit in, shit out.
+            </p>
+
+            <h2>The Context Problem</h2>
+
+            <p>
+                That's where retrieval comes in. Not generic RAG setups, but retrieval that's tuned for the actual problem your product solves. Whether it's HR, legal, support, or something else, the AI needs the right context, in the right format, every time. It's not just about stuffing documents into a vector DB and calling it a day. It's about structuring the inputs so the model can actually do its job without guessing.
+            </p>
+
+            <p>
+                Over time, this becomes the real moat. Not just "our AI does X," but "our system gives the AI exactly what it needs to do X well—and does it cheaply."
+            </p>
+
+            <h2>The Efficiency Advantage</h2>
+
+            <p>
+                Most products won't be replaced because someone has a better prompt. They'll be replaced because someone else runs the whole thing 5x more efficiently and gets better output with smaller models. That's where this is heading.
+            </p>
+
+            <p>
+                The companies that figure out how to deliver the same quality at a fraction of the cost will own their markets. It's not just about the technology—it's about the entire system working together: smart routing, efficient retrieval, and context that's engineered for the task.
+            </p>
+
+            <blockquote>
+                "The real moat isn't the AI. It's making the AI work efficiently at scale."
+            </blockquote>
+
+            <p>
+                This is the unglamorous work that actually matters. While everyone's talking about the latest model capabilities, the winners are quietly building systems that make those capabilities affordable and reliable for real users.
+            </p>
+        </article>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made by Dom</p>
+        </footer>
+    </div>
+</body>
+</html> 

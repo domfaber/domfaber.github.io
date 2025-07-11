@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 const Articles = () => {
   const articles = [
     {
+      id: "ai-saas-cost-control-moat",
+      title: "The Real Moat in AI SaaS: Cost Control and Smart Context",
+      excerpt: "Been thinking more about what makes an AI product actually defensible. Not in theory, but in the day-to-day reality of running something at scale.",
+      date: "July 2025",
+      readTime: "4 min read"
+    },
+    {
       id: "one-founder-one-product-80m-exit",
       title: "One Founder, One Product, $80M Exit",
       excerpt: "Some thoughts on Base44 and this current wave of AI tools. What happens when speed and clarity meet the right moment.",
@@ -68,9 +75,9 @@ const Articles = () => {
         {/* Articles list */}
         <div className="space-y-6">
           {articles.map((article) => (
-            <Link
+            <a
               key={article.id}
-              to={`/articles/${article.id}`}
+              href={`/articles/${article.id}.html`}
               className="group block"
             >
               <div className="relative">
@@ -102,7 +109,7 @@ const Articles = () => {
                   </div>
                 </div>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
 

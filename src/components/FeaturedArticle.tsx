@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const FeaturedArticle = () => {
   const article = {
-    title: "One Founder, One Product, $80M Exit",
-    excerpt: "Some thoughts on Base44 and this current wave of AI tools. What happens when speed and clarity meet the right moment.",
-    date: "June 2025",
-    readTime: "3 min read"
+    title: "The Real Moat in AI SaaS: Cost Control and Smart Context",
+    excerpt: "Been thinking more about what makes an AI product actually defensible. Not in theory, but in the day-to-day reality of running something at scale.",
+    date: "July 2025",
+    readTime: "4 min read"
   };
 
   return (
@@ -35,13 +35,13 @@ const FeaturedArticle = () => {
               </h3>
             </div>
             
-            <Link 
-              to="/articles/one-founder-one-product-80m-exit"
+            <a 
+              href="/articles/ai-saas-cost-control-moat.html"
               className="ml-4 inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors text-sm"
             >
               Read
               <ArrowRight className="w-3 h-3" />
-            </Link>
+            </a>
           </div>
         </div>
       </div>
